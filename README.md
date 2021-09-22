@@ -1,2 +1,2 @@
 # Tela-de-login
-Tela de login e de cadastro interativa
+Formulário com sign in/sign up interativo.
