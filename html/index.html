@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário interativo</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/bc7243edf9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,24 +24,34 @@
             </div>
             <!--fim da primeira coluna e início da segunda-->
             <div class="second-column">
-                <h2 class="title">Create account</h2>
+                <h2 class="title title-account">Create account</h2>
 
                 <!--area de redes sociais-->
                 <div class="social-media">
                     <ul class="list-social-media">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Google+</a></li>
-                        <li><a href="#">Linkedin</a></li>
+                        <li class="item-social-media"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="item-social-media"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li class="item-social-media"><a href="#"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
 
-                <p class="description">or use your email for registration.</p>
+                <p class="description description-account">or use your email for registration.</p>
 
                 <form class="form">
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Password">
-                    <button class="btn">Sign up</button>
+                    <label class="label-color" for="">
+                        <i class="fas fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+                    <label class="label-color"for="">
+                        <i class="fas fa-envelope-open-text icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+                    <label class="label-color"for="">
+                        <i class="fas fa-unlock-alt icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+
+                    <button class="btn btn-second">Sign up</button>
                 </form>
 
             </div>
@@ -63,7 +74,7 @@
                 <!--area de redes sociais-->
                 <div class="social-media">
                     <ul class="list-social-media">
-                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#">Google+</a></li>
                         <li><a href="#">Linkedin</a></li>
                     </ul>
