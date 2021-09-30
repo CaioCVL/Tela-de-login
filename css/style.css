@@ -33,10 +33,14 @@ body{
     width: 44%;
     height: 100%;
     background-color: rgba(6, 105, 72, 0.904);
+
+    border-radius: 15px;
+    left: 56%;
 }
 
 .first-content{
     display: flex;
+    display: none;;
 }
 
 .first-column{
@@ -59,10 +63,10 @@ body{
     text-transform: capitalize;
 }
 
-.title-welcome{
+.title-primary{
     color: white;
 }
-.title-account{
+.title-second{
     color: rgba(6, 105, 72, 0.904);
 }
 
@@ -74,7 +78,7 @@ body{
     line-height: 29px;
 }
 
-.description-account{
+.description-second{
     color: rgba(69, 73, 72, 0.986);
 }
 
@@ -121,12 +125,13 @@ body{
     
 }
 
-.item-social-media a{
-    color: rgba(69, 73, 72, 0.986);
-    
+.link-social-media:hover .item-social-media{
+    background-color:rgba(6, 105, 72, 0.904);
+    border-color: rgba(6, 105, 72, 0.904);
+    color: white;
 }
 
-.item-social-media:not(:first-child){
+.link-social-media:not(:first-child){
     margin-left: 10px;
 }
 
@@ -137,6 +142,7 @@ body{
     height: 35px;
     line-height: 35px;
     text-align: center;
+    color: rgba(69, 73, 72, 0.986);
 }
 
 .social-media{
@@ -147,6 +153,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 55%;
+    text-align: center;
     
 }
 
@@ -155,11 +162,6 @@ background-color: #ecf0f1;
 border: none;
 height: 40px;
 width: 100%;
-}
-
-.second-content{
-    position: absolute;
-    display: none;
 }
 
 .label-color{
@@ -172,4 +174,26 @@ width: 100%;
 }
 .icon-modify{
     padding: 0 10px;
+}
+
+
+/*inicio do segundo conteudo*/
+
+.second-content{
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-column{
+    order: 2;
+}
+
+.second-content .second-column{
+    order: 1;
+}
+
+.password a{
+    font-size: 14px;
+    color: rgba(69, 73, 72, 0.986);
+    font-weight: bold;
 }
