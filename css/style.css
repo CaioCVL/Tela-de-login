@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
 *{
 margin: 0%;
@@ -33,8 +34,8 @@ body{
     width: 44%;
     height: 100%;
     background-color: rgba(6, 105, 72, 0.904);
-
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     left: 0%;
 }
 
@@ -57,7 +58,6 @@ body{
 }
 .second-column{
     width: 60%;
-    z-index: 9;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,18 +186,19 @@ width: 100%;
     padding: 0 10px;
 }
 
-
-/*inicio do segundo conteudo*/
+/*
+inicio do segundo conteudo*/
 
 .second-content{
     position: absolute;
     display: flex;
+    
 }
 
 .second-content .first-column{
     
     order: 2;
-    z-index: -2;
+    z-index: -1;
 }
 
 .second-content .second-column{
@@ -212,6 +213,33 @@ width: 100%;
 }
 
 
-.sign-in-js{
+.sign-in-js .first-content .first-column,
+.sign-in-js .first-content .second-column{
+z-index: -1;
+}
 
+.sign-in-js .second-content .first-column,
+.sign-in-js .second-content .second-column{
+z-index: 11;
+}
+
+.sign-in-js .content::before{
+    left: 56%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column{
+z-index: -1;
+}
+
+.sign-up-js .first-content .first-column,
+.sign-up-js .first-content .second-column{
+z-index: 11;
+}
+.sign-up-js .content::before{
+    left: 0;
 }
